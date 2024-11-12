@@ -160,7 +160,7 @@ void get_mpu_direction() {
     int GyroX = readWord(GYRO_XOUT_H);
     int GyroY = readWord(GYRO_XOUT_H + 2);
     int GyroZ = readWord(GYRO_XOUT_H + 4);
-    int gy_threshold = 8000;
+    int gy_threshold = 10000;
     
     char direction;
     if(GyroY < (-1 * gy_threshold)) {
